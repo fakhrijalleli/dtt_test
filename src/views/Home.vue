@@ -61,7 +61,7 @@
         data() {
             return {
                 name: "Home",
-                sortBy: 'price',
+                sortBy: '',
                 sortDirection: 'asc',
                 highPrice: 100,
                 currentPage: 0,
@@ -144,6 +144,7 @@
 
     .asc:after {
         content: "\25B2"
+
     }
 
     .desc:after {
