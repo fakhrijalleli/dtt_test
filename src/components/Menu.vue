@@ -21,7 +21,7 @@
                             <a class="nav-link" href="#">Random</a>
                         </router-link>
                     </li>
-                    <li class="nav-item dropdown" v-show="!isRandomPage">
+                    <li class="nav-item dropdown" v-show="isHomePage">
                         <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
                            data-toggle="dropdown"
                            href="#" id="navbarDropdown" role="button">
@@ -67,8 +67,8 @@
         },
         computed: {
             ...mapGetters(["allCategories"]),
-            isRandomPage() {
-                return this.$route.name === 'Random';
+            isHomePage() {
+                return this.$route.name === 'home';
             }
         }
         ,
